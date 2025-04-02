@@ -39,7 +39,7 @@ const Home = () => {
                         <Productcard key={product._id} product={product} />
                     ))} 
                 </SimpleGrid> 
-                {products.length === 1 && (
+                {products.length > 0 && (
                 <Text fontSize={'xl'} textAlign={"center"} fontWeight={'bold'} color='gray.500'>
                     No Products Found 😎
                     <Link to={"/create"}>
